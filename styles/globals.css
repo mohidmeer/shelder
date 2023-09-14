@@ -2,26 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+
+h1 { 
+  @apply text-6xl font-extrabold
+}
+h2 { 
+  @apply text-5xl font-bold
+}
+h3 { 
+  @apply text-4xl font-bold
+}
+h4 { 
+  @apply text-3xl font-bold
+}
+h5 { 
+  @apply text-2xl font-bold
+}
+h6 { 
+  @apply text-xl font-bold
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text-light {
+  @apply text-[#a6a6b3]
+}
+.text-extralight {
+  @apply text-[#888888]
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+input {
+  @apply  py-4 pl-4 pr-12 outline-none focus:ring-1 ring-primary text-light border focus:border-transparent transition duration-500  ease-in-out
+}
+
+
+
+.hover-right {
+  box-shadow: inset 0 0 0 0 #1e1e2a;
+  transition: color .3s ease-in-out, .3s ease-in-out;
+}
+.hover-right:hover {
+  box-shadow: inset 500px 0 0 0 #1e1e2a;
+  color: white;
+}
+.hover-right-inv {
+  box-shadow: inset 0 0 0 0 #eb3848;
+  transition: color .3s ease-in-out, .3s ease-in-out;
+}
+.hover-right-inv:hover {
+  box-shadow: inset 500px 0 0 0 #eb3848;
+  color: white;
+}
+
+
+button{
+  @apply 
+  bg-primary 
+  py-2 
+  text-white font-bold 
+  w-full rounded-sm 
+  flex justify-center items-center gap-2 
+  focus:ring-1 ring-primary/60
+  hover-right
+}
+
+.btn-inverted {
+
+  @apply 
+  bg-secondary-light 
+  py-2 
+  text-white font-bold 
+  w-full rounded-sm 
+  flex justify-center items-center gap-2 
+  focus:ring-1 ring-secondary-dark/60
+  hover-right-inv
+
 }
