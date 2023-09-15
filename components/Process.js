@@ -3,7 +3,7 @@ import {MdConstruction} from 'react-icons/md'
 
 export default function Process(){
     return(
-        <div className="p-12 my-20 bg-[#272731] text-white">
+        <div className="p-12 mt-20 bg-[#272731] text-white">
             <div className="max-w-8xl mx-auto">
                 <div className="flex justify-center">
                     <Subtitle title={'HOW it works'}/>
