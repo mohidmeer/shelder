@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Services from "@/components/Services";
 import AppLayout from "@/layouts/AppLayout";
+import Head from "next/head";
 
 export default function Ser(){
     return(
